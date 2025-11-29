@@ -1,0 +1,28 @@
+section:nth-last-of-type(1) {
+    grid-area: section1;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid #ffffff;
+}
+  
+section:nth-last-of-type(2) {
+    grid-area: section2;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid #ffffff;
+}
+
+section:nth-last-of-type(3) {
+    grid-area: section3;
+    border: solid #ffffff;
+}
+
+section:nth-last-of-type(4) {
+    grid-area: section4;
+    border: solid #ffffff;
+}
+
+section:nth-last-of-type(5) {
+    grid-area: section5;
+    border: solid #ffffff;
+}

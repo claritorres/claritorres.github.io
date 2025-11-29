@@ -1,0 +1,95 @@
+/*Grid Columns*/
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section5 section5 section4 section4 section3 section3"
+    "section2 section2 section2 section1 section1 section1"; 
+    gap: 20px;
+}
+
+section:nth-last-of-type(1) {
+    grid-area: section1;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    border: 5px solid #0f7bbc;
+    font-size: 1.3rem;
+}
+  
+section:nth-last-of-type(2) {
+    grid-area: section2;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: .1px;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    border: 5px solid #0f7bbc;
+    font-size: 1.3rem;
+}
+
+section:nth-last-of-type(3) {
+    grid-area: section3;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 1.1%;
+    border: 5px solid #0f7bbc;
+    font-size: 1.3rem;
+}
+
+section:nth-last-of-type(4) {
+    grid-area: section4;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    border: 5px solid #0f7bbc;
+    font-size: 1.3rem;
+}
+
+section:nth-last-of-type(5) {
+    grid-area: section5;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    border: 5px solid #0f7bbc;
+    font-size: 1.3rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*Media querie*/
+
+@media (max-width: 940px) {
+  main {
+    grid-template-areas:
+     "section5 section5 section5 section4 section4 section4"
+     "section3 section3 section3 section3 section3 section3" 
+     "section2 section2 section2 section2 section2 section2"  
+     "section1 section1 section1 section1 section1 section1" 
+    ;
+  }
+}
+
+@media (max-width: 620px) {
+  main {
+    display: block;
+  }
+}
