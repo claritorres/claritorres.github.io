@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Stalinist+One&display=swap');
+
+/*
+font-family: "Stalinist One", sans-serif;
+ font-family: "Overpass", sans-serif;
+ font-family: "Orbitron", sans-serif;
+*/
+
+/* nav */
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    background: #fff;
+    color: #1b306e;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+
+}
+
+nav ul li a:hover {
+    background: #274397;
+    color: #ffffff;
+}
+
+/*body*/
+
+body {
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+header {
+    padding: 10% 0;
+    background-image: url(images/banner.jpg);
+    height: 290px;
+    background-size: cover;
+    opacity: 96%;
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Stalinist One", sans-serif;
+    font-size: 4.5rem;
+    color: #ffffff;
+}
+
+header span {
+    display: block;
+    font-family: "Stalinist One", sans-serif;
+    font-size: 3.5rem;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+header ul li {
+    margin: 1px;
+}
+
+header ul li a{
+    text-decoration: none;
+    background: #203a8a;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    border-radius: 6px;
+    font-size: 1.3rem;
+
+}
+
+header ul li a:hover {
+    background: #fff;
+    color: #203a8a;
+}
+
+h2 {
+     font-family: "Orbitron", sans-serif;
+     font-weight: 600;
+     text-align: center;
+     font-size: 1.5rem;
+}
+
+footer {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 2%;
+    background-color: rgb(12, 26, 88);
+}
+
+footer p {
+    padding-left: 50px;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+footer span {
+    font-weight: 450;
+}
+
+/*Grid Columns*/
+
+main {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section2 section1"; 
+    gap: 20px;
+}
+
+section:nth-last-of-type(1) {
+    grid-area: section1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+section:nth-last-of-type(2) {
+    grid-area: section2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+/*Media querie*/
+
+@media (max-width: 620px) {
+  main {
+    display: block;
+  }
+}

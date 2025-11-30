@@ -1,0 +1,78 @@
+/*Body*/
+
+body header {
+    padding: 2% 0;
+    background-image: url(images/banner_color.jpg);
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+body header h1 {
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+/*Grid Columns*/
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section3 section3 section1"
+    "section2 section2 section1"; 
+    gap: 20px;
+}
+
+section:nth-last-of-type(1) {
+    grid-area: section1; 
+}
+  
+section:nth-last-of-type(2) {
+    grid-area: section2;
+    margin-top: 20px;
+    margin-bottom: 27px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    border: 5px solid #0f7bbc;
+    font-size: 1.3rem;
+}
+
+section:nth-last-of-type(3) {
+    grid-area: section3;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    padding-top: 15px;
+    border: 5px solid #0f7bbc;
+    font-size: 1.3rem;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    line-height: 38px;
+}
+
+/*Media querie*/
+
+@media (max-width: 940px) {
+  main {
+    grid-template-areas:
+     "section3 section3 section3 section3"
+     "section2 section2 section1 section1"  
+    ;
+  }
+}
+
+@media (max-width: 620px) {
+  main {
+    display: block;
+  }
+}
