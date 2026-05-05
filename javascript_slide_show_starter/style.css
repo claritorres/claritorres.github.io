@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*
+font-family: "Hepta Slab", serif;
+font-family: "Inter", sans-serif;
+*/
+
+/* Body */
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header, footer {
+    background: #0c99ba;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main section {
+    flex: 1 1 50%;
+    padding: 10px;
+    max-width: 100%;
+}
+
+h1, header p, main, footer p {
+    width: 75%;
+    margin: auto;
+}
+
+h1, h2 {
+    font-family: "Hepta Slab", serif;
+}
+
+.cycle-slideshow {
+    width: 50%;
+}
+
+.cycle-slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Formatting Captions*/
+
+.slide {
+    position: relative;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 243, 235, 0.8);
+    padding: 0 15px;
+    width: 100%;
+}
+
+.slide-text h2 {
+    color: #200c00;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.slide-text p {
+    color: #200c00;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Buttons */
+
+.cycle-prev, .cycle-next {
+    position: absolute;
+    background: rgba(74, 35, 2, 0.65);
+    color: #fff;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cycle-prev {
+    top: 40%;
+    left: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.cycle-next {
+    top: 40%;
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.cycle-slideshow:hover .cycle-prev {
+    opacity: 1;
+}
+
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+
+.cycle-pager {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 1050;
+}
+.cycle-pager span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 5px;
+    cursor: pointer;
+    text-indent: -999px;
+}
+
+.cycle-pager .cycle-pager-active {
+    background: #ffc37a;
+}
+
+.slide-text p a {
+    display: inline-block;
+    text-decoration: none;
+    background: #35a198;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.slide-text p a:hover {
+    background: #301507;
+    color: #ffc37a; 
+}
+
+/* Media Queries */
+/* Desktops */
+
+@media (max-width: 1500px) {
+    h1, header p, main, footer p {
+        width: 100%;
+    }
+}
+
+/* Tablets and Phones */
+
+@media (max-width: 970px) {
+    main section {
+        flex: auto;
+    }
+}
