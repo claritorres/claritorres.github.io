@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Joti+One&display=swap');
+
+/*
+font-family: "Joti One", serif;
+font-family: "Josefin Sans", sans-serif;
+*/
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* nav */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+nav ul li {
+    font-size: 1.3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+   padding: 5px 20px 0px 20px;
+    
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background: #000;
+}
+
+/* header */
+
+h1 {
+    font-family: "Joti One", serif;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+}
+
+
+#first_half {
+    background-color: black;
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex: 1 1 25%; 
+}
+
+#first_half p {
+    font-size: 18px;
+    line-height: 1.8rem;
+    margin-top: 25px;
+}
+
+#second_half {
+    position: relative;
+    overflow: hidden;
+    height: 310px;
+    flex: 1 1 75%;
+}
+
+#second_half video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-flow: wrap row;
+    background-color: #d9d9d9;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+main section {
+    flex: 1 1 33%;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+main p {
+    line-height: 1.7rem;
+}
+
+img {
+     max-width: 100%;
+     min-width: 100%;
+}
+
+
+/* electric guitars page */
+
+#electric_guitars section {
+    flex: 1 1 25%;
+    overflow: hidden;
+}
+
+#electric_guitars figure {
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+#electric_guitars figcaption {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#electric_guitars figure:hover figcaption {
+    transform: translateY(0);
+    opacity: 100;
+    
+}
+
+#electric_guitars figcaption span {
+    font-size: 2.55rem;
+    font-weight: 900;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+#electric_guitars figcaption p span {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+
+
+/* footer */
+
+footer {
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-bottom: 45px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    background: #98d1f2;
+    padding: 5px 20px;
+    display: inline-block;
+    border: 1.5px solid #000;
+    line-height: 2rem;
+    transition: all 0.5s;
+}
+
+footer a:hover {
+    background-color: #eecd90;
+}
+
+/* media */
+
+@media (min-aspect-ratio: 16/9) {
+    #second_half video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #second_half video {
+        width: 100%;
+        height: 100%;
+    }
+}
